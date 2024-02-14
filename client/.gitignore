@@ -1,0 +1,54 @@
+
+# dependencies
+/node_modules
+
+# production build
+/build
+
+# development environment
+/.env.local
+/.env.development.local
+/.env.test.local
+/.env.production.local
+
+# cache and logs
+/.pnp
+.pnp.js
+
+# yarn
+.yarn/*
+!.yarn/patches
+!.yarn/releases
+!.yarn/plugins
+!.yarn/sdks
+!.yarn/versions
+.pnp.*
+
+# npm
+*.pnp.js
+
+# Visual Studio Code files
+.vscode
+
+# IDE files
+*.idea
+*.iml
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# build artifacts
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Editor directories and files
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
