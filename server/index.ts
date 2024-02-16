@@ -1,4 +1,4 @@
-import { Express } from "express";
+import  Express  from "express";
 type Path = [number, number, number, number, number, number];
 
 interface Music {
@@ -60,7 +60,7 @@ function sleep(timer: number) {
 }
 const app = Express();
 const port = 3000;
-app.use(express.json());
+app.use(Express.json());
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
