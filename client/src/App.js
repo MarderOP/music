@@ -1,7 +1,18 @@
 import logo from './logo.svg';
 import './App.css';
-
+import MusicComponent from './MusicComponent';
 function App() {
+  let Music={
+    Chords: [
+      { Name: 'C', Path: [0, 1, 0, 2, 3, 0] },
+      { Name: 'G', Path: [3, 2, 0, 0, 3, 3] },
+    ],
+    Song: [
+      { Play: 'C', Interval: 1000 },
+      { Play: 'G', Interval: 1000 },
+    ],
+    Capo:1
+  }
   return (
     <div className="App">
       <header className="App-header">
@@ -9,14 +20,7 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+          <MusicComponent Music={Music}/>
       </header>
     </div>
   );
