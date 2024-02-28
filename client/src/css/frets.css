@@ -1,0 +1,14 @@
+.fretboard {
+    display: flex;
+  }
+  
+  .fret {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .string {
+    width: 40px; /* Adjust as needed */
+    height: 150px; /* Adjust as needed */
+    border: 1px solid black;
+  }
